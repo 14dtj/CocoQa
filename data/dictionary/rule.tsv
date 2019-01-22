@@ -1,0 +1,37 @@
+id	name	synonym
+1	Reduce complexity by symmetry.	reduce complexity
+2	Enumeration constants can be prefixed by a common type name.	enumeration constants can be prefixed
+3	goto should not be used.	use goto$using goto
+4	do-while loops can be avoided.	do-while
+5	Variables should be initialized where they are declared.	initialize variables where they are declared
+6	Class and method header comments should follow the JavaDoc conventions.	class header comments$method header comments
+7	Complex conditional expressions must be avoided. Introduce temporary boolean variables instead .	complex conditional expressions$conditional expressions are too complex
+8	Methods should be separated by three blank lines.	blank line
+9	Variables must never have dual meaning.	variables have dual meaning
+10	Executable statements in conditionals must be avoided.	executable statements in conditionals
+11	Private class variables should have underscore suffix.	private class variables
+12	Colons should be surrounded by white space.	colons be surrounded by
+13	The incompleteness of split lines must be made obvious.	incompleteness of split lines
+14	Commas should be followed by a white space.	commas be followed by
+15	Negated boolean variable names must be avoided.	negated boolean variable
+16	Naming pointers specifically should be avoided.	avoid naming pointers
+17	Variables in declarations can be left aligned.	align variables in declarations
+18	Generic variables should have the same name as their type.	generic variables
+19	Use alignment wherever it enhances readability.	alignment where to use
+20	File content must be kept within 80 columns.	file content length
+21	Abbreviations in names should be avoided.	avoid abbreviation in names
+22	Use of global variables should be minimized use.	minimize use of global variables
+23	All definitions should reside in source files.	where to define
+24	Include statements must be located at the top of a file only.	locate include statements at the top of a file
+25	All names should be written in English.	names must in English
+26	Header files must contain an include guard.	include guard must in header files
+27	Basic indentation should be 2.	basic indentation
+28	The conditional should be put on a separate line.	put conditional on separate lines
+29	Variable names must be in mixed case starting with lower case.	variable names must started with lower case
+30	Variables should be declared in the smallest scope possible.	declare variables in the smallest scope possible$define variables in the smallest scope possible
+31	Exception classes should be suffixed with Exception.	exception classes
+32	 The prefix is should be used for boolean variables and methods.	name boolean variables and methods$boolean variables$boolean methods
+33	Use//for all comments, including multi-line comments.	writing multi-line comments$multiline comments
+34	Type conversions must always be done explicitly. Never rely on implicit type conversion.	use implicit type conversions$type conversions
+35	A try-catch statement should have the following form:\ntry {\n  statements;\n}\ncatch (Exception& exception) {\n  statements;\n}	trycatch structure$trycatch
+26	The use of magic numbers in the code should be avoided. Numbers other than 0 and 1 should be considered declared as named constants instead.	magic number$magic numbers

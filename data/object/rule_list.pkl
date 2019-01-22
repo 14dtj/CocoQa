@@ -1,0 +1,62 @@
+(lp1
+S'Reduce complexity by symmetry'
+p2
+aS'Enumeration constants can be prefixed by a common type name'
+p3
+aS'goto should not be used'
+p4
+aS'do-while loops can be avoided'
+p5
+aS'Variables should be initialized where they are declared'
+p6
+aS'Class and method header comments should follow the JavaDoc conventions'
+p7
+aS'Complex conditional expressions must be avoided'
+p8
+aS'Methods should be separated by three blank lines'
+p9
+aS'Variables must never have dual meaning'
+p10
+aS'Executable statements in conditionals must be avoided'
+p11
+aS'Private class variables should have underscore suffix'
+p12
+aS'Colons should be surrounded by white space'
+p13
+aS'The incompleteness of split lines must be made obvious'
+p14
+aS'Commas should be followed by a white space'
+p15
+aS'Negated boolean variable names must be avoided'
+p16
+aS'Naming pointers specifically should be avoided'
+p17
+aS'Variables in declarations can be left aligned'
+p18
+aS'Generic variables should have the same name as their type'
+p19
+aS'Use alignment wherever it enhances readability'
+p20
+aS'File content must be kept within 80 columns'
+p21
+aS'Abbreviations in names should be avoided'
+p22
+aS'Use of global variables should be minimized'
+p23
+aS'All definitions should reside in source files'
+p24
+aS'Include statements must be located at the top of a file only'
+p25
+aS'All names should be written in English'
+p26
+aS'Header files must contain an include guard'
+p27
+aS'Basic indentation should be 2'
+p28
+aS'The conditional should be put on a separate line'
+p29
+aS'Variable names must be in mixed case starting with lower case'
+p30
+aS'Variables should be declared in the smallest scope possible'
+p31
+a.

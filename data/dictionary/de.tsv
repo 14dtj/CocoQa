@@ -1,0 +1,15 @@
+id	name	synonym
+0	Authority	authority$expert view
+1	Company	company$institution
+2	Organization	organisation
+3	People	people$person$individual$someone$somebody
+4	Document	document$written document$papers$text file
+5	ProgrammingLanguage	programming language$program language$computer language$coding language
+6	Project	project$task
+7	QuestionAnswer	question answer$question and answer$questions and answers$qa
+8	Resource	resource$source$origin$root
+9	Book	book$written work$composition
+10	WebArticle	web article$web$blog$website$forum
+11	SoftwareSpecification	software specification$software idiom$software spec$software convention$software guideline$software style$programming specification$programming idiom$programming spec$programming convention$programming guideline$programming style$program specification$program idiom$program spec$program convention$program guideline$program style$code specification$code idiom$code spec$code convention$code guideline$code style$coding specification$coding idiom$coding spec$coding convention$coding guideline$coding style
+12	GeneralSoftwareSpecification	general software specification$general software idiom$general software spec$general software convention$general software guideline$general software style$general programming specification$general programming idiom$general programming spec$general programming convention$general programming guideline$general programming style$general program specification$general program idiom$general program spec$general program convention$general program guideline$general program style$general code specification$general code idiom$general code spec$general code convention$general code guideline$general code style$general coding specification$general coding idiom$general coding spec$general coding convention$general coding guideline$general coding style
+13	LanguageSoftwareSpecification	language software specification$language software idiom$language software spec$language software convention$language software guideline$language software style$language programming specification$language programming idiom$language programming spec$language programming convention$language programming guideline$language programming style$language program specification$language program idiom$language program spec$language program convention$language program guideline$language program style$language code specification$language code idiom$language code spec$language code convention$language code guideline$language code style$language coding specification$language coding idiom$language coding spec$language coding convention$language coding guideline$language coding style

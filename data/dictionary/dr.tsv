@@ -1,0 +1,35 @@
+id	relation	text
+0	Contributor	contributor$contributor of$contribute to$dedication$devote to$subscriber
+1	Language	language$programming language
+2	Master	master of$master$maestro$professional$inventor$create$inventor of$professional at
+3	Maintainer	maintainer$upholder$sustainer$maintainer of$upholder of$uphold$sustainer of$sustain
+4	Proposer	proposer$suggester$proposal$proposer of$suggest$advance a suggestion$proposal$propose$put forward$raise$bring forward$pose
+5	Member	member$fellow member$member of
+6	Participator	participator$participant$participator of$participate in$join in$participant
+7	Answerer	answerer$respondent$responder$answerer of$respondent of$responder of$answer$reply$respond$solution$result$resolution$solvent$
+8	Questioner	questioner$inquirer$enquirer$querier$asker$questioner of$inquirer of$enquirer of$querier of$asker of$ask$inquire$enquire
+9	Reference	reference$citation$cite$acknowledgement$credit$mention$quotaion$book$source$publication$reference of$citation of$cited by$acknowledgement of$credited by$mention of$quotaion of$book of$source of$publication of
+10	SubSpecification	sub specification$sub specification of
+11	Writer	writer$author$writer of$author of
+12	Source	source$source of$document of
+13	BadExample	bad example$disadvantageous example$negative example
+14	BadCodeExample	bad code example$disadvantageous code example$negative code example
+15	Cons	cons$disadvantage$shortcoming$defect
+16	ConsExample	cons example$disadvantageous example$negative example
+17	ConsCodeExample	cons code example$disadvantageous code example$negative code example
+18	ConsExplanation	cons explanation$bad description
+19	Decision	decision$judgment$judgement$mind$choice$selection$option$pick
+20	Exception	exception$omission$example$illustration$instance$representative$objection
+21	LastUpdatedDate	last updated date$last updated time
+22	Name	name$denote$refer$label
+23	Pros	pros$advantage$benefit$favour$why should i
+24	ProsExample	pros example$good examples$good instance$good case$good illustration
+25	ProsCodeExample	pros code example$good code example$good code instance$good code case$good code illustration
+26	ProsExplanation	pros explanation$good description
+27	Question	question$subject$topic$theme$uncertainty$challenge$ask$chew over$think over$meditate
+28	Rationale	rationale$explanation
+29	Rule	rule$concept$direction$instruction$how should i$how to
+30	RuleExplanation	rule explanation$rule definition$rule concept
+31	Title	title$heading$header$head$name$subheading
+32	Type	type$kind$sort$form$variety$group$class$category$species
+33	DocumentUrl	document url$document uniform_resource_locator$document universal_resource_locator

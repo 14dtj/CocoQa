@@ -1,0 +1,122 @@
+id	name	synonym
+1	Layout	layout$layouts$layouted$layouting
+2	Statements	stament$statment$stmt$sql statement$statements$sql-statement$statments$sql statements$sql statment
+3	Loops	loops$iteration$the loop$loop
+4	Specific Naming Conventions	name$naming convention$specific naming convention$specific naming pattern$specific naming rule$specific naming idiom$specific naming guideline$specific naming style
+5	Comments	comments$remark$note$review$commenting$commenters
+6	Source Files	source files$source code
+7	White Space	white space$whitespace$white-spaces$white-space character$white spaces$whitespaces$whitespace character$white-space$white space characters$white-space characters
+8	Variables	variables$symbol$logical expression$mathematical expression$vars$varibles$varaible$varable
+9	General Naming Conventions	name$naming convention$general naming conventions$general naming pattern$general naming rule$general naming idiom$general naming guideline$general naming style
+10	Conditionals	conditionals$condition$conditonally$condition$conditional statement$conditions
+11	Functions	functions$routine$subroutine$subprogram$procedure$funcs$functors$functor$function constructor
+12	Types	types$type$type function
+13	Constants	constants$invariable$invariant expression$changeless expression$unvarying expression
+14	Include Files and Include Statements	include files$include statements$include message$include declaration$include instruction$include command
+15	Column limit: 100	column limit: 100
+16	Ordering and spacing	ordering and spacing$ordering$spacing
+17	Naming&&Camel case	naming and camel case$naming&&camel case
+18	Non-ASCII characters	non-ascii characters
+19	Braces are used where optional	braces are used where optional$braces
+20	Method names	method names
+21	Arrays	array$arrays$arr
+22	One statement per line	one statement per line
+23	Horizontal whitespace	horizontal whitespace
+24	No line-wrapping	no line-wrapping
+25	Variable declarations	variable declarations$declare variable
+26	Special escape sequences	special escape sequences
+27	Annotation	annotation$annotate
+28	Whitespace characters	whitespace characters
+29	Finalizers: not used	finalizers: not used$finalizer
+30	Block indentation: +2 spaces	block indentation: +2 spaces
+31	No wildcard imports	no wildcard imports$wildcard imports
+32	Type variable names	type variable name
+33	Ordering of class contents	ordering of class
+34	File encoding	file encoding$encode file
+35	Static members: qualified using class	static members: qualified using class
+36	Empty blocks: may be concise	empty blocks: may be concise
+37	Source file structure	source file structure$structure
+38	Package statement	package statement$package
+39	Enum classes	enum$enums$enum classes
+40	Local variable names	local variable names$naming local variable
+41	Numeric Literals	numeric literals
+42	Non-constant field names	non-constant field names
+43	Exactly one top-level class declaration	exactly one top-level class declaration
+44	File name	file name$naming file
+45	Class names	class name
+46	Caught exceptions: not ignored	caught exceptions: not ignored
+47	Grouping parentheses: recommended	grouping parentheses: recommended
+46	Parameter names	parameter names$naming parameter
+48	Modifier	modifier
+49	Constant names	constant names
+50	No static import for classes	no static import for classes
+51	Switch statements	switch statements
+52	Where to break	where to break
+53	Package names	package names
+54	Override: always used	override: always used
+55	Vertical Whitespace	vertical whitespace
+56	Horizontal alignment: never required	horizontal alignment: never required
+57	Nonempty blocks: K & R style	nonempty blocks: k & r style
+58	Indent continuation lines at least +4 spaces	indent continuation lines at least +4 spaces
+59	Beginning Comments	beginning comments
+60	return Statements	return statements
+61	Block Comments	block comments
+62	End-Of-Line Comments	end-of-line comments
+63	Placement	placement
+64	Documentation Comments	documentation comments
+65	File Organization	file organization
+66	Java Source Files	java source files
+67	Indentation	indentation
+68	Wrapping Lines	wrapping lines
+69	Trailing Comments	trailing comments
+70	Compound Statements	compound statements
+71	Line Length	line length
+72	Single-Line Comments	single-line comments
+73	Class and Interface Declarations	class and interface declarations
+74	Number Per Line	number per line
+75	Package and Import Statements	package and import statements
+76	if, if-else, if-else-if-else Statements	if, if-else, if-else-if-else statements
+77	File Suffixes	file suffixes
+78	Simple Statements	simple statements
+79	Initialization	initialization
+80	RemoteSessionInterfaceNamingConvention	remotesessioninterfacenamingconvention
+81	MDBAndSessionBeanNamingConvention	mdbandsessionbeannamingconvention
+82	UnnecessaryLocalBeforeReturn	unnecessarylocalbeforereturn
+83	ConfusingTernary	confusingternary
+84	AvoidProtectedFieldInFinalClass	avoidprotectedfieldinfinalclass
+85	FieldDeclarationsShouldBeAtStartOfClass	fielddeclarationsshouldbeatstartofclass
+86	RemoteInterfaceNamingConvention	remoteinterfacenamingconvention
+87	AvoidDollarSigns	avoiddollarsigns
+88	LongVariable	longvariable
+89	UnnecessaryFullyQualifiedName	unnecessaryfullyqualifiedname
+90	CommentDefaultAccessModifier	commentdefaultaccessmodifier
+91	LocalInterfaceSessionNamingConvention	localinterfacesessionnamingconvention
+92	AvoidFinalLocalVariable	avoidfinallocalvariable
+93	ExtendsObject	extendsobject
+94	PrematureDeclaration	prematuredeclaration
+95	UselessQualifiedThis	uselessqualifiedthis
+96	LocalVariableCouldBeFinal	localvariablecouldbefinal
+97	UnnecessaryAnnotationValueElement	unnecessaryannotationvalueelement
+98	CallSuperInConstructor	callsuperinconstructor
+99	LocalHomeNamingConvention	localhomenamingconvention
+100	EmptyMethodInAbstractClassShouldBeAbstract	emptymethodinabstractclassshouldbeabstract
+101	PackageCase	packagecase
+102	UselessParentheses	uselessparentheses
+103	TooManyStaticImports	toomanystaticimports
+104	BooleanGetMethodName	booleangetmethodname
+105	IdenticalCatchBranches	identicalcatchbranches
+106	DuplicateImports	duplicateimports
+107	OnlyOneReturn	onlyonereturn
+108	UnnecessaryReturn	unnecessaryreturn
+109	DefaultPackage	defaultpackage
+110	ShortVariable	shortvariable
+111	AvoidUsingNativeCode	avoidusingnativecode
+112	GenericsNaming	genericsnaming
+113	ShortClassName	shortclassname
+114	DontImportJavaLang	dontimportjavalang
+115	NoPackage	nopackage
+116	UnnecessaryModifier	unnecessarymodifier
+117	ControlStatementBraces	controlstatementbraces
+118	ShortMethodName	shortmethodname
+119	AvoidProtectedMethodInFinalClassNotExtending	avoidprotectedmethodinfinalclassnotextending
+120	ForLoopShouldBeWhileLoop	forloopshouldbewhileLoop
