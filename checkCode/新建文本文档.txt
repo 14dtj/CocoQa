@@ -1,4 +1,0 @@
-使用google_checks.xml检查check.java文件，直接在命令行输出
-java com.puppycrawl.tools.checkstyle.Main -c doc/google_checks.xml check.java
-使用google_checks.xml检查check.java文件，检查结果输出到build/error
-java com.puppycrawl.tools.checkstyle.Main -c doc/google_checks.xml -o build/error check.java
