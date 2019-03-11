@@ -1,0 +1,816 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/CCBase"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/CCBase">
+    <Prefix name="" IRI="http://www.semanticweb.org/CCBase"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CodeConvention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuestionAnswer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#ProgrammingLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/CCBase#WebArticle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#AnswererOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ContributorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#LanguageOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MaintainerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MasterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ParticipaterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ProposerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#QuestionerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ReferenceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#WriterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasAnswerer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasContributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaintainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaster"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasParticipater"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasProposer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasQuestioner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSubSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasWriter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasAnswer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadCodeExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasCons"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsCodeExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExplanation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasDecision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasException"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasLastUpdatedDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasPros"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsCodeExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExplanation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasQuestion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRationale"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRule"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRuleExplanation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasUrl"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasReference"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSource"/>
+            <Class IRI="#Document"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasCons"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExplanation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasDecision"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasException"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasPros"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExplanation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRationale"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRule"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRuleExplanation"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeConvention"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasType"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Document"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasLastUpdatedDate"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Document"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasUrl"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Project"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasLastUpdatedDate"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Project"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Project"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasUrl"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuestionAnswer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasAnswer"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuestionAnswer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasLastUpdatedDate"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuestionAnswer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuestionAnswer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasQuestion"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasTitle"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasUrl"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#ProgrammingLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#LanguageOf"/>
+            <Class IRI="#Document"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#ProgrammingLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#LanguageOf"/>
+            <Class IRI="#Project"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#ProgrammingLanguage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#LanguageOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#ProgrammingLanguage"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ContributorOf"/>
+            <Class IRI="#Project"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MasterOf"/>
+            <Class IRI="/#ProgrammingLanguage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#WriterOf"/>
+            <Class IRI="#Document"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#WriterOf"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasUrl"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#Book"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#Company"/>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        <Class IRI="#CodeConvention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadExample"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExample"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#GeneralSoftwareSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExample"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        <Class IRI="#CodeConvention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadCodeExample"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsCodeExample"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#LanguageSoftwareSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsCodeExample"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#Organization"/>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#People"/>
+        <Class IRI="http://www.semanticweb.org/jCCBase/#Authority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#People"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#AnswererOf"/>
+            <Class IRI="#QuestionAnswer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#People"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MemberOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#People"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MemberOf"/>
+            <Class IRI="http://www.semanticweb.org/CCBase#Organization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#People"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/CCBase#QuestionerOf"/>
+            <Class IRI="#QuestionAnswer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/CCBase#WebArticle"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#AnswererOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ParticipaterOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ContributorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#LanguageOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MaintainerOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MasterOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MasterOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MemberOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ParticipaterOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ProposerOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MasterOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#QuestionerOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ParticipaterOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ReferenceOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SourceOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#WriterOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasAnswerer"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasParticipater"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasContributor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasLanguage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaintainer"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaster"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaster"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMember"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasParticipater"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasProposer"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaster"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasQuestioner"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasParticipater"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasReference"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSource"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSubSpecification"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasWriter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#AnswererOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasAnswerer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ContributorOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasContributor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#LanguageOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasLanguage"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MaintainerOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaintainer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MasterOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMaster"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#MemberOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasMember"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ParticipaterOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasParticipater"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ProposerOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasProposer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#QuestionerOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasQuestioner"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#ReferenceOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasReference"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SourceOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSource"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSubSpecification"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#WriterOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasWriter"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#SubSpecificationOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/CCBase#hasSubSpecification"/>
+    </TransitiveObjectProperty>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasAnswer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadCodeExample"/>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadExample"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasBadExample"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasCons"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsCodeExample"/>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExample"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExample"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasConsExplanation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasDecision"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasException"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasLastUpdatedDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasPros"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsCodeExample"/>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExample"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExample"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasProsExplanation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasQuestion"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRationale"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasRuleExplanation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/CCBase#hasUrl"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
