@@ -1,4 +1,4 @@
-import construction
+from sub_graph import construction
 from entity_linking import ner
 import sparql
 
@@ -96,4 +96,4 @@ def query_name(question):
 
 
 if __name__ == '__main__':
-    print execute('when could I use break and continue in loops?')
+    print('when could I use break and continue in loops?')

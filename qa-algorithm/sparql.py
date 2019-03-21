@@ -1,7 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from model import ScoreResult
 
-sparql = SPARQLWrapper("http://218.193.191.42:4506/newdata")
+sparql = SPARQLWrapper("http://202.120.40.28:4460/data")
 ft = SPARQLWrapper("http://218.193.191.42:4507/data")
 
 special_dic = {'ProsExample': 'ProsCluster', 'ConsExample': 'ConsCluster',
@@ -9,7 +9,7 @@ special_dic = {'ProsExample': 'ProsCluster', 'ConsExample': 'ConsCluster',
                'Pros': 'ProsCluster', 'Cons': 'ConsCluster'}
 
 deserted_attributes = ['OntologyType', 'Source', 'SoftwareSpecificationType', 'ExcelId', 'Similar',
-                       'RelatedSpecification', 'FatherName']
+                       'RelatedSpecification', 'FatherName','PrimaryTypeList','SecondaryTypeList']
 similar_attributes = ['Similar', 'RelatedSpecification']
 
 
@@ -56,7 +56,9 @@ def test(query, param_set, has_attribute):
             if s_id not in result_dic:
                 result_dic[s_id] = {"Id": s_id}
             if predicate in ('ProsCluster', 'ConsCluster'):
-                result_dic[s_id].update(find_cluster('<' + value + '>'))
+                if not value.startswith('<'):
+				    value = '<'+value+'>' 
+                result_dic[s_id].update(find_cluster(value))
             if predicate in deserted_attributes:
                 continue
             else:
@@ -118,7 +120,7 @@ def full_text_search(keywords):
     ft.setReturnFormat(JSON)
     result = []
 
-    res = ft.query().convert()
+    res = ft.query().convert() 
     for r in res["results"]["bindings"]:
         if float(r["sc"]["value"]) > 4.31:
             result.append(r["rule"]["value"])
@@ -197,9 +199,7 @@ def advanced_search(name, rule, benefit, weakness, exception):
         if entity not in result_dic:
             result_dic[entity] = {"Id": entity}
         if predicate in ('ProsCluster', 'ConsCluster'):
-            if not value.startswith('<'):
-                value = '<' + value + '>'
-            result_dic[entity].update(find_cluster(value))
+            result_dic[entity].update(find_cluster('<'+value+'>'))
         if predicate in deserted_attributes:
             continue
         else:

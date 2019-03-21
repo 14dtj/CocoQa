@@ -1,0 +1,35 @@
+/*中心实体的样式*/
+.mainEntity{}
+
+/*其他实体的样式*/
+.otherEntity{}
+
+/*属性的样式*/
+.property{}
+
+/*其他实体名字*/
+.otherEntityName{fill:black;}
+
+/*属性名字*/
+.propertyName{fill:black;}
+
+/*其他实体的连线*/
+.otherEntityLine{stroke:#b3b3cc ;stroke-width:1;}
+
+/*其他实体连线的文字*/
+.otherEntityLineText{fill:black;}
+
+/*属性的连线*/
+.propertyLine{stroke:#b3b3cc ;stroke-width:1;}
+
+/*属性连线的文字*/
+.propertyLineText{fill:black;}
+
+/*其他实体的连线关系*/
+.otherEntityLineRela{color: #333333;}
+
+/*属性的连线关系*/
+.propertyLineRela{color: #333333;}
+
+
+

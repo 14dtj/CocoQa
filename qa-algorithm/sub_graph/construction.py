@@ -1,5 +1,3 @@
-import string
-from string import maketrans
 import Queue
 import copy
 from stanfordcorenlp import StanfordCoreNLP

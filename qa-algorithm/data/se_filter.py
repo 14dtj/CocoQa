@@ -3,7 +3,7 @@ import csv
 import cPickle
 import ahocorasick
 
-db = SPARQLWrapper("http://218.193.191.42:4506/data")
+db = SPARQLWrapper("http://202.120.40.28:4460/data")
 rules = []
 se_list = []
 se_keys = ahocorasick.Automaton()

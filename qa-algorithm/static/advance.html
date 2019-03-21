@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>index2</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="util.js"></script>
+    <script src="advancesearch.js"></script>
+    <script src="prism.js"></script>
+    <script src="d3.min.js"></script>
+    <script src="kbdisplay.js"></script>
+    <link href="kb.css" rel="stylesheet" type="text/css"/>
+    <link href="prism.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div style="display: flex;justify-content: flex-end;">
+    <div style="display: flex;justify-content: flex-end;">
+        <div style="margin: 3px">
+            <a id="searchA" style="padding: 10px">Search</a>
+            <a id="checkCodeA" style="padding: 10px">Check code</a>
+        </div>
+    </div>
+</div>
+<div style="margin: 5px">
+    Here are some fields that you could enter to help to find the code convention or style<b>(CCOS)</b> you want.
+</div>
+<div id="advanceDiv">
+    <table class="table">
+        <tbody>
+        <tr>
+            <td>name:</td>
+            <td><input style="width: 100%;border: 0" type="text" placeholder="input name of that CCOS" id="name" value="layout"/></td>
+        </tr>
+        <tr>
+            <td>rule:</td>
+            <td><input style="width: 100%;border: 0" type="text" placeholder="input brief description of CCOS" id="rule"/></td>
+        </tr>
+        <tr>
+            <td>benefit:</td>
+            <td><input style="width: 100%;border: 0" type="text" placeholder="input benefits that you would gain if you adopt CCOS" id="benefit" value="make it obvious for the reader"/></td>
+        </tr>
+        <tr>
+            <td>weakness:</td>
+            <td><input style="width: 100%;border: 0" type="text" placeholder="input pains that you  would suffer if you adopt that CCOS" id="weakness"/></td>
+        </tr>
+        <tr>
+            <td>exception:</td>
+            <td><input style="width: 100%;border: 0" type="text" placeholder="input the situation that you should or should not adopt CCOS" id="exception"/></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="display: flex;justify-content: flex-end;">
+        <button id="advancesearch" style="margin: 5px">advanced search</button>
+    </div>
+</div>
+
+<!--<div class="container">-->
+    <!--<div class="row visible-on">-->
+        <!--<div class="col-xs-6 col-sm-6 col-md-4">-->
+                <!--name:-->
+        <!--</div>-->
+        <!--<div class="col-xs-6 col-sm-6 col-md-4">-->
+            <!--<input style="width: 100%;" type="text" placeholder="" id="name"/>-->
+        <!--</div>-->
+        <!--<div class="col-md-4 hidden-sm hidden-xs">-->
+            <!--input name of that CCOS</td>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div id="advanceDiv" style="margin: 8px">-->
+
+    <!--<table id="table" style="margin: 10px;width: 100%">-->
+        <!--<tr>-->
+            <!--<td>name:</td>-->
+            <!--<td><input style="width: 100%;max-width: 500px" type="text" placeholder="input name of that CCOS" id="name"/></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>rule:</td>-->
+            <!--<td><input style="width: 100%;max-width: 500px" type="text" placeholder="input brief description (or anything else you think is helpful for search) of that code convention or style" id="rule"/></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>benefit:</td>-->
+            <!--<td><input style="width: 100%;max-width: 500px" type="text" placeholder="input benefits that you would gain if you adopt that code convention or style" id="benefit"/></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>weakness:</td>-->
+            <!--<td><input style="width: 100%;max-width: 500px" type="text" placeholder="input pains that you  would suffer if you adopt that code convention or style" id="weakness"/></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>exception:</td>-->
+            <!--<td><input style="width: 100%;max-width: 500px" type="text" placeholder="input the situation that you should or should not adopt this code convention or style" id="exception"/></td>-->
+        <!--</tr>-->
+    <!--</table>-->
+    <!--<div style="display: flex;justify-content: flex-end;">-->
+        <!--<button id="advancesearch" style="margin: 5px">advanced search</button>-->
+    <!--</div>-->
+<!--</div>-->
+<div id="answer" style="margin: 10px">
+
+</div>
+</body>
+
+</html>

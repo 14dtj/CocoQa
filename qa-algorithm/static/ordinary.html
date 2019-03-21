@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>index</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="util.js"></script>
+    <script src="search.js"></script>
+    <script src="prism.js"></script>
+    <script src="d3.min.js"></script>
+    <script src="kbdisplay.js"></script>
+    <link href="kb.css" rel="stylesheet" type="text/css"/>
+    <link href="prism.css" rel="stylesheet" type="text/css"/>
+
+
+    <!--<script src="../META-INF/resources/search.js"></script>-->
+    <!--<script src="../META-INF/resources/prism.js"></script>-->
+    <!--<link href="../META-INF/resources/prism.css" rel="stylesheet" type="text/css"/>-->
+
+
+</head>
+<body>
+<div style="display: flex;justify-content: flex-end;">
+    <div style="margin: 3px">
+        <a id="advanceA" style="padding: 10px">Advanced search</a>
+        <a id="checkCodeA" style="padding: 10px">Check code</a>
+    </div>
+</div>
+<div id="header" style="display:flex;flex-direction:row; margin: 5px">
+    <input type="text" id="query" placeholder="search about code convention or style" style="flex-grow:1;"/>
+    <input type="submit" value="search" id="ordinarysearch"/>
+</div>
+<div id="answer" style="margin: 10px"></div>
+</body>
+
+</html>

@@ -1,13 +1,35 @@
+import sys
+sys.path.append("/home/user/kbqa2019/code-convention-robot")
 from flask import Flask, request
 from flask import jsonify
+from flask_cors import *
 from sub_graph import execution, construction
 import json
 import sparql
 import getopt
 from checkCode import checkstyle
 
-app = Flask(__name__, static_url_path='')
+app = Flask(__name__,static_url_path='')
+CORS(app, supports_credentials=True)
 
+@app.route('/test')
+def hello_world():
+    print sparql.full_text_search('declare variables in the smallest scope possible')
+    return 'hello'
+
+@app.route('/ordinary')
+def ordinary():
+    return app.send_static_file('ordinary.html')
+
+
+@app.route('/advance')
+def advance():
+    return app.send_static_file('advance.html')
+
+
+@app.route('/code')
+def code():
+    return app.send_static_file('code.html')
 
 # query by uri
 @app.route('/accurate', methods=['POST'])
@@ -50,23 +72,20 @@ def query():
         if params:
             return search_by_params(params)
     except getopt.GetoptError:
-        print 'get opt error'
+        print('get opt error')
     re_dict = {}
     if contain_zh(question):
         re_dict['status'] = 'fail'
         re_dict['error_msg'] = "Please enter english question~ "
         return json.dumps(re_dict)
-    try:
-        results = execution.execute(str(question))
-        if results == -1:
-            re_dict['status'] = 'fail'
-        else:
-            re_dict['data'] = results
-            re_dict['status'] = 'success'
-    except Exception:
+
+    results = execution.execute(str(question))
+    if results == -1:
         re_dict['status'] = 'fail'
-        re_dict['error_msg'] = "Sorry, we don't know."
-        construction.clear_global_variables()
+    else:
+        re_dict['data'] = results
+        re_dict['status'] = 'success'
+    construction.clear_global_variables()
     return make_response(re_dict)
 
 
@@ -171,7 +190,3 @@ def merge_blank(arr):
             del arr[i + 1:j + 1]
         i += 1
     return arr
-
-
-if __name__ == '__main__':
-    app.run(debug=True)

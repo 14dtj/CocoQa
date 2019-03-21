@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="codemirror-5.12/lib/codemirror.css" rel="stylesheet" type="text/css"/>
+    <script src="codemirror-5.12/lib/codemirror.js"></script>
+    <script src="codemirror-5.12/mode/clike/clike.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="util.js"></script>
+    <script src="search.js"></script>
+    <script src="checkcode.js"></script>
+    <script src="prism.js"></script>
+    <link href="prism.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div style="display: flex;justify-content: flex-end;">
+    <div style="display: flex;justify-content: flex-end;">
+        <div style="margin: 3px">
+            <a id="searchA" style="padding: 10px">Search</a>
+            <a id="advanceA" style="padding: 10px">Advanced search</a>
+        </div>
+    </div>
+</div>
+<div>
+    <textarea rows="20"  id="code"  style="width: 100%" >
+public class Check {
+    public static void main(String[] args) {
+        System.out.println("hi");
+        if(true){
+            if(true){
+                if(true){
+                    if(true){
+
+                    }
+                }
+            }
+        }
+    }
+}     
+    </textarea>
+</div>
+<div style="margin: 5px">
+    <button id="check">check</button>
+</div>
+<div>
+    <div id="result" style="width: 100%">
+
+   
+    
+    </div>
+    <!--<textarea rows="20"  hidden="hidden" style="width: 100%"></textarea>-->
+</div>
+
+</body>
+
+</html>
