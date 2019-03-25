@@ -1,5 +1,4 @@
 import sys
-sys.path.append("/home/user/kbqa2019/code-convention-robot")
 from flask import Flask, request
 from flask import jsonify
 from flask_cors import *
