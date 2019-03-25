@@ -21,14 +21,16 @@ Then, Stanford CoreNLP server will listen on port 9000 for requests.
 After that, the following python packages have to be installed.
 ```
 Python 2.7.0
-FLASK 1.0.2
-SPARQLWrapper 1.8.2
-stanfordcorenlp 3.9.1.1
-pyahocorasick latest
+Flask==1.0.2
+Flask-Cors==3.0.7
+gunicorn==19.9.0
+pyahocorasick==lattest
+SPARQLWrapper==1.8.2
+stanfordcorenlp==3.9.1.1
 ```
 **Run**
 ```
 cd code-convention-robot
-FLASK_APP = server.py flask run --host=0.0.0.0 --port=5000
+gunicorn -b 0.0.0.0:${port} server:app
 ```
 Now, you can visit ```localhost:5000/ordinary``` to experience our system!
