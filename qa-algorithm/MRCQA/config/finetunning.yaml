@@ -1,0 +1,45 @@
+data:
+  dataset:
+    train_path: data/SQuAD/train-v1.1.json
+    dev_path: data/SQuAD/dev-v1.1.json
+    train2_path: data/ccbase/ccbase_train.json
+    dev2_path: data/ccbase/ccbase_dev.json
+    test_path: data/ccbase/ccbase_test.json
+  dataset_h5: /mnt/sdb/cjm/Match-LSTM/data/exp/19/19.h5
+  embedding_path: /mnt/sdb/cjm/Match-LSTM/data/glove.840B.300d.zip
+
+  model_path: /mnt/sdb/cjm/Match-LSTM/data/exp/19/model-weight.pt
+  checkpoint_path: /mnt/sdb/cjm/Match-LSTM/data/exp/19/checkpoint
+
+global:
+  random_seed: 123
+  num_data_workers: 5   # for data loader
+  model: match-lstm+  # 'match-lstm', 'match-lstm+', 'r-net', 'm-reader' or 'base'
+  finetune: True      # Note that 'base' model is customized by base_model.yaml
+  finetune2: False                     # Note that 'base' model is customized by base_model.yaml
+
+preprocess:
+  word_embedding_size: 300
+  ignore_max_len: 600 # in train data, context token len > ignore_max_len will be dropped
+  use_char: True
+  use_pos: True
+  use_ent: True
+  use_em: True
+  use_em_lemma: True
+  use_domain_tag: False
+
+train:
+  batch_size: 32
+  valid_batch_size: 32
+  epoch: 25
+  enable_cuda: True
+  gpu_id: 1
+  optimizer: 'adamax'  # adam, sgd, adamax, adadelta(default is adamax)
+  learning_rate: 0.002  # only for sgd
+  clip_grad_norm: 5
+  finetune_epoch: 20
+
+test:
+  batch_size: 10
+  enable_cuda: True
+  gpu_id: 1

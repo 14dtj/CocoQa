@@ -1,0 +1,43 @@
+data:
+  dataset:
+    train_path: MRC-data/marco/marco+1sample_tag.json
+    dev_path: data/ccbase/ccbase_dev.json
+    test_path: data/ccbase/ccbase_test.json
+  dataset_h5: data/exp/tagging/tagging.h5
+  embedding_path: data/glove.840B.300d.zip
+
+  model_path: data/exp/tagging/model-weight.pt
+  checkpoint_path: data/exp/tagging/checkpoint
+
+global:
+  random_seed: 123
+  num_data_workers: 5   # for data loader
+  model: match-lstm+  # 'match-lstm', 'match-lstm+', 'r-net', 'm-reader' or 'base'
+  finetune: False                     # Note that 'base' model is customized by base_model.yaml
+  finetune2: False                     # Note that 'base' model is customized by base_model.yaml
+
+preprocess:
+  word_embedding_size: 300
+  ignore_max_len: 600 # in train data, context token len > ignore_max_len will be dropped
+  use_char: True
+  use_pos: True
+  use_ent: True
+  use_em: True
+  use_em_lemma: True
+  use_domain_tag: True
+
+train:
+  batch_size: 32
+  valid_batch_size: 32
+  epoch: 30
+  enable_cuda: True
+  gpu_id: 0
+
+  optimizer: 'adamax'  # adam, sgd, adamax, adadelta(default is adamax)
+  learning_rate: 0.002  # only for sgd
+  clip_grad_norm: 5
+
+test:
+  batch_size: 32
+  enable_cuda: True
+  gpu_id: 0
