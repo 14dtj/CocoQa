@@ -3,7 +3,7 @@ An auto QA system about code convention and styles based on knowledge base
 ## Ontology & RDF
 We construct a knowledge base called CCBase in the field of coding convention. Ontology folder contains the ontology of CCBase, including subject types, relations and so on, which is in the form of owl. RDF folder contains some entities of our CCBase.
 ## Plugin
-We developed an Intellij Idea plugin. You can download [plugin.jar](https://github.com/14dtj/code-convention-robot/tree/master/plugin) and install it by the [instructions of Idea](https://www.jetbrains.com/help/idea/managing-plugins.html). 
+We developed an Intellij Idea plugin. You can download [plugin.zip](https://github.com/14dtj/CocoQa/blob/master/plugin/plugin.jar) and install it by the [instructions of Idea](https://www.jetbrains.com/help/idea/managing-plugins.html). 
 
 ## Introduction
 ![Design of CCQA](https://github.com/14dtj/CocoQa/blob/master/arc.png)

@@ -1,6 +1,6 @@
 <idea-plugin>
-  <id>com.bjshen.CSQAS</id>
-  <name>CSQAS</name>
+  <id>com.bjshen.CocoQA</id>
+  <name>CocoQA</name>
   <version>1.0</version>
   <vendor email="li_wei@sjtu.edu.cn" url="http://base.sjtu.edu.cn/~bjshen/en/index.html">Big Data Software Engineering Lab</vendor>
 
@@ -28,7 +28,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <toolWindow id="CSQAS" secondary="true" icon="/myToolWindow/plus.png" anchor="right"
+    <toolWindow id="CocoQA" secondary="true" icon="/myToolWindow/plus.png" anchor="right"
                 factoryClass="fx.ToolWindow"/>
   </extensions>
 
