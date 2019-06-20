@@ -13,7 +13,7 @@ We developed an Intellij Idea plugin. You can download [plugin.zip](https://gith
 CocoQa is a QA system for coding conventions. CocoQa combines the advantages of the KB- and the corpus-based QA systems: it stores in a knowledge base coding conventions collected from online resources; it builds CCBase, a knowledge graph introduced in [3], for modeling coding conventions; and it answers questions about coding conventions by querying the graph.
 
 As the above figure shows, the CocoQa tool consists of four components: (1) a coding convention knowledge graph constructed from online resources, (2) a subgraph matcher that understands natural language questions and performs SPARQL queries over the knowledge graph, (3) a machine comprehenser that employs a deep neural network model to answer questions. The comprehenser searches answers from all textual paragraphs attached to the knowledge graph, and (4) a ranker that ranks answers retrieved by the subgraph matcher and the machine comprehenser via a logistic regression classifier.
-In the algorithm folder is the CCQA system. CCQA can assist programmers to retrieval information about coding conventions in a more natural manner.  
+
 
 The subgraph matcher generates answers to a question by querying entities and their relations in CCBase. Given a question, it casts the question into a SPARQL query followed by querying CCBase. The procedure and a running example is available [here]().
 
