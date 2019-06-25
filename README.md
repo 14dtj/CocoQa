@@ -15,7 +15,7 @@ CocoQa is a QA system for coding conventions. CocoQa combines the advantages of 
 As the above figure shows, the CocoQa tool consists of four components: (1) a coding convention knowledge graph constructed from online resources, (2) a subgraph matcher that understands natural language questions and performs SPARQL queries over the knowledge graph, (3) a machine comprehenser that employs a deep neural network model to answer questions. The comprehenser searches answers from all textual paragraphs attached to the knowledge graph, and (4) a ranker that ranks answers retrieved by the subgraph matcher and the machine comprehenser via a logistic regression classifier.
 
 
-The subgraph matcher generates answers to a question by querying entities and their relations in CCBase. Given a question, it casts the question into a SPARQL query followed by querying CCBase. The procedure and a running example is available [here]().
+The subgraph matcher generates answers to a question by querying entities and their relations in CCBase. Given a question, it casts the question into a SPARQL query followed by querying CCBase. The procedure and a running example is available [here](https://github.com/14dtj/CocoQa/tree/master/qa-algorithm/CCQA).
 
 We also integrate an end-to-end machine comprehension approach that applies a deep neural network to answer the query on textual paragraphs attached in CCBase. The introduction and procedure to run machine comprehension QA could be found [here](https://github.com/14dtj/CocoQa/blob/master/qa-algorithm/MRCQA/README.md) .
 A logistic regression classifier is trained to merge and rank the answers, and retrieve the top ones.
