@@ -20,27 +20,15 @@ The subgraph matcher generates answers to a question by querying entities and th
 We also integrate an end-to-end machine comprehension approach that applies a deep neural network to answer the query on textual paragraphs attached in CCBase. The introduction and procedure to run machine comprehension QA could be found [here](https://github.com/14dtj/CocoQa/blob/master/qa-algorithm/MRCQA/README.md) .
 A logistic regression classifier is trained to merge and rank the answers, and retrieve the top ones.
 ## Install
-It is a web application and we developed a graphical interface. After installing the following python packages, you can run FLASK server and experience CCQA.  
+It is a web application and we developed a graphical interface. After installing the following python packages, you can run FLASK server and experience CocoQa.  
 **Dependencies**  
 First of all, you should download [Stanford CoreNLP toolkit](https://stanfordnlp.github.io/CoreNLP/) and run the server.
 ```
 cd stanford-corenlp-full-${version}
 java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 ```
-Then, Stanford CoreNLP server will listen on port 9000 for requests.  
-After that, the following python packages have to be installed.
-```
-Python 2.7.0
-Flask==1.0.2
-Flask-Cors==3.0.7
-gunicorn==19.9.0
-pyahocorasick==lattest
-SPARQLWrapper==1.8.2
-stanfordcorenlp==3.9.1.1
-```
-**Run**
-```
-cd code-convention-robot
-gunicorn -b 0.0.0.0:${port} server:app
-```
-Now, you can visit ```localhost:5000/ordinary``` to experience our system!
+Then, Stanford CoreNLP server will listen on port 9000 for requests. 
+
+After that, you should run [MRCQA]() and [Ranker](). At last, you can start to run [CCQA]().
+
+Now, you can visit ```localhost:$port/ordinary``` to experience our system!
