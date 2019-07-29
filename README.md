@@ -29,6 +29,6 @@ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -t
 ```
 Then, Stanford CoreNLP server will listen on port 9000 for requests. 
 
-After that, you should run [MRCQA]() and [Ranker](). At last, you can start to run [CCQA]().
+After that, you should run [MRCQA](https://github.com/14dtj/CocoQa/tree/master/qa-algorithm/MRCQA) and [Ranker](https://github.com/14dtj/CocoQa/tree/master/qa-algorithm/Ranker). At last, you can start to run [CCQA](https://github.com/14dtj/CocoQa/tree/master/qa-algorithm/CCQA).
 
 Now, you can visit ```localhost:$port/ordinary``` to experience our system!
