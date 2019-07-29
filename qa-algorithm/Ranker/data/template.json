@@ -1,0 +1,213 @@
+{
+  "What should I do if the conditional expressions are too complex?": {
+    "data": [
+      {
+        "context": "Complex conditional expressions must be avoided. Introduce temporary boolean variables instead.By assigning boolean variables to expressions, the program gets automatic documentation. The construction will be easier to read, debug and maintain.",
+        "answer_start": 0,
+        "answer_end": 95,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/54",
+            "CodeConventionType": "control structure",
+            "Name": "Conditionals",
+            "Pros": "By assigning boolean variables to expressions, the program gets automatic documentation. The construction will be easier to read, debug and maintain.",
+            "Rule": "Complex conditional expressions must be avoided. Introduce temporary boolean variables instead.",
+            "BadExample": "if ((elementNo < 0) || (elementNo > maxElement)|| elementNo == lastElement) { : }"
+          }
+        ]
+      },
+      {
+        "context": "Do not use complicated statements in conditional statements (except for frequently used methods like getXxx/isXxx ). Use boolean variables to store results of complicated statements temporarily will increase the code’s readability. Note: Logic within many if statements are very complicated. Readers need to analyze the final results of the conditional expression to decide what statement will be executed in certain conditions.",
+        "answer_start": 0,
+        "answer_end": 116,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/386",
+            "Rule": "Do not use complicated statements in conditional statements (except for frequently used methods like getXxx/isXxx). Use boolean variables to store results of complicated statements temporarily will increase the code’s readability.",
+            "RuleExplanation": "Logic within many if statements are very complicated. Readers need to analyze the final results of the conditional expression to decide what statement will be executed in certain conditions.",
+            "ProsExample": "boolean existed = (file.open(fileName, \"w\") != null) && (...) || (...); if (existed) { ... } ",
+            "ConsExample": "if ((file.open(fileName, \"w\") != null) && (...) || (...)) { ... }"
+          }
+        ]
+      }
+    ],
+    "status": "success"
+  },
+  "How should I name boolean variables and methods?": {
+    "data": [
+      {
+        "context": "The prefix is should be used for boolean variables and methods.Common practice in the C++ development community and partially enforced in Java.Using the is prefix solves a common problem of choosing bad boolean names like status or flag. isStatus or isFlag simply doesn't fit, and the programmer is forced to choose more meaningful names.",
+        "answer_start": 0,
+        "answer_end": 63,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/22",
+            "Name": "Specific Naming Conventions",
+            "Rule": "The prefix is should be used for boolean variables and methods.",
+            "Pros": "Using the is prefix solves a common problem of choosing bad boolean names like status or flag. isStatus or isFlag simply doesn't fit, and the programmer is forced to choose more meaningful names."
+          }
+        ]
+      },
+      {
+        "context": "Do not add ‘is’ as prefix while defining Boolean variable, since it may cause a serialization exception in some Java frameworks. Counter example: boolean isSuccess; The method name will be isSuccess() and then RPC framework will deduce the variable name as ‘success’, resulting in a serialization error since it cannot find the correct attribute.",
+        "answer_start": 0,
+        "answer_end": 57,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/299",
+            "Rule": "Do not add ‘is’ as prefix while defining Boolean variable, since it may cause a serialization exception in some Java frameworks.",
+            "BadExample": "boolean isSuccess; The method name will be isSuccess() and then RPC framework will deduce the variable name as ‘success’, resulting in a serialization error since it cannot find the correct attribute."
+          }
+        ]
+      },
+      {
+        "context": "Negated boolean variable names must be avoided.The problem arises when such a name is used in conjunction with the logical negation operator as this results in a double negative. It is not immediately apparent what !isNotFound means.",
+        "answer_start": 0,
+        "answer_end": 47,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/26",
+            "Name": "Specific Naming Conventions",
+            "Rule": "Negated boolean variable names must be avoided.The problem arises when such a name is used in conjunction with the logical negation operator as this results in a double negative. It is not immediately apparent what !isNotFound means.",
+            "BadExample": "isNoError"
+          }
+        ]
+      },
+      {
+        "context": "Methods that return boolean results should be named as predicate statements to denote this. I.e, ‘isReady()’, ‘hasValues()’, ‘canCommit()’, ‘willFail()’, etc. Avoid the use of the ‘get’ prefix for these methods.",
+        "answer_start": 0,
+        "answer_end": 91,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/255",
+            "Name": "BooleanGetMethodName",
+            "Rule": "Methods that return boolean results should be named as predicate statements to denote this. Avoid the use of the ‘get’ prefix for these methods.",
+            "BadExample": "public boolean getFoo();",
+            "RuleExplanation": "I.e, ‘isReady()’, ‘hasValues()’, ‘canCommit()’, ‘willFail()’, etc.",
+            "ProsExample": "public boolean isFoo();"
+          }
+        ]
+      }
+    ],
+    "status": "success"
+  },
+  "What is the benefit to declare variables in the smallest scope possible?": {
+    "data": [
+      {
+        "context": "Variables should be declared in the smallest scope possible.Keeping the operations on a variable within a small scope, it is easier to control the effects and side effects of the variable.",
+        "answer_start": 119,
+        "answer_end": 188,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/48",
+            "Name": "Variables",
+            "Rule": "Variables should be declared in the smallest scope possible.",
+            "Pros": "It is easier to control the effects and side effects of the variable."
+          }
+        ]
+      }
+    ],
+    "status": "success"
+  },
+  "why should I define variables in the smallest scope possible?": {
+    "data": [
+      {
+        "context": "Variables should be declared in the smallest scope possible.Keeping the operations on a variable within a small scope, it is easier to control the effects and side effects of the variable.",
+        "answer_start": 119,
+        "answer_end": 188,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/48",
+            "Name": "Variables",
+            "Rule": "Variables should be declared in the smallest scope possible.",
+            "Pros": "It is easier to control the effects and side effects of the variable."
+          }
+        ]
+      }
+    ],
+    "status": "success"
+  },
+  "How should I write comments?": {
+    "data": [
+      {
+        "context": "Comments should not be enclosed in large boxes drawn with asterisks or other characters. Comments should never include special characters such as form-feed and backspace",
+        "answer_start": 0,
+        "answer_end": 169,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/196",
+            "Rule": "Comments should not be enclosed in large boxes drawn with asterisks or other characters. Comments should never include special characters such as form-feed and backspace."
+          }
+        ]
+      },
+      {
+        "context": "Very short comments can appear on the same line as the code they describe, but should be shifted far enough to separate them from the statements. If more than one short comment appears in a chunk of code, they should all be indented to the same tab setting. Avoid the assembly language style of commenting every line of executable code with a trailing comment.Here's an example:\nif (a == 2) {\n    return TRUE;            /* special case */\n} else {\n    return isprime(a);      /* works only for odd a */\n}",
+        "answer_start": 0,
+        "answer_end": 360,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/201",
+            "Name": "Trailing Comments",
+            "Rule": "Very short comments can appear on the same line as the code they describe, but should be shifted far enough to separate them from the statements. If more than one short comment appears in a chunk of code, they should all be indented to the same tab setting. Avoid the assembly language style of commenting every line of executable code with a trailing comment.",
+            "ProsExample": "if (a == 2) { return TRUE; /* special case */ } else { return isprime(a); /* works only for odd a */ }"
+          }
+        ]
+      },
+      {
+        "context": "Comments should be included relative to their position in the code.This is to avoid that the comments break the logical structure of the program.",
+        "answer_start": 0,
+        "answer_end": 67,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/90",
+            "Name": "Comments",
+            "Rule": "Comments should be included relative to their position in the code",
+            "BadExample": "while (true) { // Do something something(); }"
+          }
+        ]
+      },
+      {
+        "context": "Use // for all comments, including multi-line comments.Since multilevel C-commenting is not supported, using // comments ensure that it is always possible to comment out entire sections of a file using /* */ for debugging purposes etc. There should be a space between the \"//\" and the actual comment, and comments should always start with an upper case letter and end with a period.",
+        "answer_start": 236,
+        "answer_end": 382,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/89",
+            "Name": "Comments",
+            "Rule": "There should be a space between the \"//\" and the actual comment, and comments should always start with an upper case letter and end with a period."
+          }
+        ]
+      },
+      {
+        "context": "Block comments are used to provide descriptions of files, methods, data structures and algorithms. Block comments should be used at the beginning of each file and before each method. They can also be used in other places, such as within methods. Block comments inside a function or method should be indented to the same level as the code they describe.A block comment should be preceded by a blank line to set it apart from the rest of the code. Block comments have an asterisk \"*\" at the beginning of each line except the first.\n\n /*\n * Here is a block comment.\n */\nBlock comments can start with /*-, which is recognized by indent(1) as the beginning of a block comment that should not reformatted. ",
+        "answer_start": 352,
+        "answer_end": 529,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/198",
+            "Rule": "A block comment should be preceded by a blank line to set it apart from the rest of the code. Block comments have an asterisk \"*\" at the beginning of each line except the first."
+          }
+        ]
+      }
+    ],
+    "status": "success"
+  },
+  "what are the effects of using \"goto\"?": {
+    "data": [
+      {
+        "context": "goto should not be used.Goto statements violate the idea of structured code. Only in some very few cases (for instance breaking out of deeply nested structures) should goto be considered, and only if the alternative structured counterpart is proven to be less readable.",
+        "answer_start": 24,
+        "answer_end": 269,
+        "entity": [
+          {
+            "Id": "http://www.semanticweb.org/CCBase/#CodeConvention/63",
+            "Name": "Statements",
+            "Rule": "goto should not be used.Goto statements violate the idea of structured code. ",
+            "Exception": "Only in some very few cases (for instance breaking out of deeply nested structures) should goto be considered, and only if the alternative structured counterpart is proven to be less readable."
+          }
+        ]
+      }
+    ],
+    "status": "success"
+  }
+}
