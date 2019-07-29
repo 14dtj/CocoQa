@@ -14,7 +14,7 @@
 
 ```bash
 cd Ranker
-gunicorn -b 0.0.0.0:${port} server:app
+gunicorn -b 0.0.0.0:8989 server:app
 ```
 
 
