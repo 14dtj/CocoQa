@@ -1,19 +1,35 @@
 import sys
+sys.path.append("/home/user/kbqa2019/code-convention-robot")
 from flask import Flask, request
 from flask import jsonify
 from flask_cors import *
 from sub_graph import execution, construction
 import json
+import requests
 import sparql
 import getopt
 from checkCode import checkstyle
 
 app = Flask(__name__,static_url_path='')
 CORS(app, supports_credentials=True)
+with open('data/template.json', "r") as f:
+    template_questions = json.load(f)
+
+
+@app.route('/template', methods=['POST'])
+def template_question():
+    params = request.json
+    url = "http://localhost:8989/template"
+    r = {'status': 'fail'}
+    try:
+        r = requests.post(url,json=params)
+        r = r.json()
+    except Exception:
+        r = {'status': 'fail'}
+    return make_response(r)
 
 @app.route('/test')
 def hello_world():
-    print sparql.full_text_search('declare variables in the smallest scope possible')
     return 'hello'
 
 @app.route('/ordinary')
@@ -153,18 +169,17 @@ def search_by_params(params):
     if 'exception' in params:
         exception = str(params['exception'])
 
-    results = sparql.advanced_search(name, rule, benefit, weakness, exception)
     re_dict = {}
     try:
+        results = sparql.advanced_search(name, rule, benefit, weakness, exception)
         if results == -1:
             re_dict['status'] = 'fail'
-            re_dict['error_msg'] = "Sorry, please check your input."
         else:
             re_dict['data'] = results
             re_dict['status'] = 'success'
     except Exception:
         re_dict['status'] = 'fail'
-        re_dict['error_msg'] = "Sorry, we can't find the answer."
+
     return make_response(re_dict)
 
 

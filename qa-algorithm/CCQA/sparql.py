@@ -57,7 +57,7 @@ def test(query, param_set, has_attribute):
                 result_dic[s_id] = {"Id": s_id}
             if predicate in ('ProsCluster', 'ConsCluster'):
                 if not value.startswith('<'):
-				    value = '<'+value+'>' 
+                    value = '<'+value+'>' 
                 result_dic[s_id].update(find_cluster(value))
             if predicate in deserted_attributes:
                 continue
