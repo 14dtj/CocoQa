@@ -1,5 +1,5 @@
 Flask==1.0.2
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 gunicorn==19.9.0
 pyahocorasick==1.1.10
 SPARQLWrapper==1.8.2
